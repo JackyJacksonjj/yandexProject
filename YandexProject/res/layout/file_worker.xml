@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newFolder"
+            android:id="@+id/newFolderButton" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:focusableInTouchMode="false"/>
+    <ListView
+        android:id="@+id/EntityList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_below="@+id/newFolderButton"></ListView>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refreshList"
+            android:id="@+id/refreshListButton" android:layout_above="@+id/EntityList" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fileNameContainer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acceptButtonString"
+        android:id="@+id/acceptButton"
+        android:minWidth="80dp"
+        android:maxWidth="80dp"
+        android:clickable="true"
+        android:layout_below="@+id/fileNameContainer"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelButtonString"
+        android:id="@+id/declineButton"
+        android:maxWidth="80dp"
+        android:minWidth="80dp"
+        android:singleLine="true"
+        android:clickable="true"
+        android:layout_below="@+id/fileNameContainer"
+        android:layout_toRightOf="@+id/acceptButton" />
+</RelativeLayout>
